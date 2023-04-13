@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dovetail</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="full-content">
+      <div class="top-content">
+        <!-- <img src="/asset/map-img.PNG" alt="map" class="map-img" /> -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15314291.304795785!2d66.14777082242298!3d20.430637684600466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce9011b7b733%3A0x17b4bed4af30d067!2sDovetail%20Advisers%20LLP!5e0!3m2!1sen!2sin!4v1677673960188!5m2!1sen!2sin"
+          width="600"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          id="map"
+        ></iframe>
+        <!-- <div class="map-responsive">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15314291.304795785!2d66.14777082242298!3d20.430637684600466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce9011b7b733%3A0x17b4bed4af30d067!2sDovetail%20Advisers%20LLP!5e0!3m2!1sen!2sin!4v1677673960188!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            id="map"
+          ></iframe>
+        </div> -->
+      </div>
+      <div class="bottom-content">
+        <div class="blue-bar d-flex justify-content-center">
+          <img src="/asset/blue-bar.PNG" alt="blue bar" class="blue-bar-img" />
+        </div>
+        <header
+          class="top d-flex align-items-center justify-content-between"
+          id="slideup"
+        >
+        
+          <div>AWB : #CJNB-0056_1</div>
+          <div class="eta-info d-flex align-items-center">
+            <div class="d-flex align-content-center">ETA :</div>
+            <div class="eta-status">ARRIVED</div>
+          </div>
+        </header>
+        <div id="checkout">
+          <div class="driver-status-1 d-flex align-items-center">
+            <div class="blue-circle"></div>
+            <div>Driver is on the way</div>
+          </div>
+
+          <!-- this div will change depending upon the status of driver -->
+          <div class="driver-status-2 d-flex align-items-center">
+            <div class="green-circle"></div>
+            <div>Driver Arrived At 21 Sep 22, 6:45pm</div>
+          </div>
+
+          <div class="vehicle-info">
+            <div class="vehicle-info-title"><p>Vehicle details</p></div>
+            <div class="vehicle-card">
+              <div class="truck-img">
+                <img src="/asset/truck.jpg" alt="truck" class="truck-imgs" />
+              </div>
+              <div class="vehicle-number">
+                YYX-0196
+                <span>Truck</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="driver-details">
+            <div class="vehicle-info-title"><p>Driver Details</p></div>
+            <div class="driver-info">
+              <div class="driver-name-section">
+                <img
+                  src="/asset/driver.jfif"
+                  alt="driver"
+                  class="driver-imgs"
+                />
+                <div class="">
+                  <div class="driver-name">Huggo Blaauw</div>
+                  <div class="rating-stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <span>4.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-icn-box">
+                <div class="msg-icon">
+                  <img
+                    src="/asset/msg-icn.png"
+                    alt="message driver"
+                    class="driver-imgs"
+                  />
+                </div>
+                <div class="call-icon">
+                  <img
+                    src="/asset/call-icn.png"
+                    alt="call driver"
+                    class="driver-imgs"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="special-instruction">
+            <div class="vehicle-info-title"><p>Special Instruction</p></div>
+            <div class="">
+              <div class="instruction-line">
+                <div class="instruction-tag">
+                  <div class="instruction-icon">
+                    <img
+                      src="/asset/instruction-icn.png"
+                      alt="driver arrived"
+                      class="driver-arrived"
+                    />
+                  </div>
+                  <div class="">leave at gate</div>
+                </div>
+                <div class="instruction-tag">
+                  <div class="instruction-icon">
+                    <img
+                      src="/asset/instruction-icn.png"
+                      alt="driver arrived"
+                      class="driver-arrived"
+                    />
+                  </div>
+                  <div class="">leave at security</div>
+                </div>
+                <div class="instruction-tag">
+                  <div class="instruction-icon">
+                    <img
+                      src="/asset/instruction-icn.png"
+                      alt="driver arrived"
+                      class="driver-arrived"
+                    />
+                  </div>
+                  <div class="">Lorem</div>
+                </div>
+              </div>
+              <div class="instruction-line">
+                <div class="instruction-tag">
+                  <div class="instruction-icon">
+                    <img
+                      src="/asset/instruction-icn.png"
+                      alt="driver arrived"
+                      class="driver-arrived"
+                    />
+                  </div>
+                  <div class="">Lorem ipsum dolor</div>
+                </div>
+                <div class="instruction-tag">
+                  <div class="instruction-icon">
+                    <img
+                      src="/asset/instruction-icn.png"
+                      alt="driver arrived"
+                      class="driver-arrived"
+                    />
+                  </div>
+                  <div class="">Lorem ipsum dolor</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-details">
+            <div class="vehicle-info-title"><p>Order Details</p></div>
+            <div class="order-id">
+              <p>AWB : #CJNB-0056_1</p>
+            </div>
+            <div class="arrived-location">
+              <div>
+                <img
+                  src="/asset/green-arrived-icn.png"
+                  alt="driver arrived"
+                  class="driver-arrived"
+                />
+              </div>
+              <div class="">
+                <p>Karkloof Cres, Waterval City, Midrand, 2066</p>
+              </div>
+            </div>
+            <div class="dotted-line"></div>
+            <div class="location-started">
+              <div>
+                <img
+                  src="/asset/red-from-icn.png"
+                  alt="driver current location"
+                  class="driver-on-the-way"
+                />
+              </div>
+              <div class="">
+                <p>
+                  Start :99 Silwood Road, Bramley, Johannesburg, 2018, South…
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="shipper-review">
+            <div class="feedback-question">How is Your Shipper?</div>
+            <div class="feedback-content">
+              <p>Lorem ipsum dolor sit amet, consetetur</p>
+            </div>
+            <div class="rate-out-of-five">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+  ></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+</html>
