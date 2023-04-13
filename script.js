@@ -24,11 +24,11 @@ $(document).ready(function () {
   });
 });
 
-// jispe click krega
-const bottom = document.querySelector(".bottom-content");
+// where we click
+const bottom = document.querySelector(".area-to-top");
 
 bottom.addEventListener("click", () => {
-  // jisko toggle krega
+  // one which toggle
   const map = document.querySelector(".top-content");
   map.toggleAttribute("minimize");
 });
